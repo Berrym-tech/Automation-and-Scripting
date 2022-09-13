@@ -1,0 +1,4 @@
+---
+apache:
+  QQ: "QQ.exe.*"
+  FF: "QQ.exe."
