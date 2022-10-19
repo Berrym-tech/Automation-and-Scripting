@@ -1,0 +1,50 @@
+Oct 18 18:37:46 ubuntu systemd-logind[652]: New seat seat0.
+Oct 18 18:37:46 ubuntu systemd-logind[652]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct 18 18:37:46 ubuntu systemd-logind[652]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Oct 18 18:37:48 ubuntu lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)
+Oct 18 18:37:48 ubuntu systemd-logind[652]: New session c1 of user lightdm.
+Oct 18 18:37:48 ubuntu systemd: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)
+Oct 18 18:37:48 ubuntu lightdm: gkr-pam: gnome-keyring-daemon started properly
+Oct 18 18:37:49 ubuntu lightdm: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "max"
+Oct 18 18:37:55 ubuntu lightdm: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=max
+Oct 18 18:37:57 ubuntu systemd-logind[652]: Watching system buttons on /dev/input/event0 (Power Button)
+Oct 18 18:37:57 ubuntu lightdm: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "max"
+Oct 18 18:37:57 ubuntu systemd-logind[652]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Oct 18 18:38:04 ubuntu lightdm: gkr-pam: unable to locate daemon control file
+Oct 18 18:38:04 ubuntu lightdm: gkr-pam: stashed password to try later in open session
+Oct 18 18:38:04 ubuntu lightdm: pam_unix(lightdm-greeter:session): session closed for user lightdm
+Oct 18 18:38:04 ubuntu lightdm: pam_unix(lightdm:session): session opened for user max by (uid=0)
+Oct 18 18:38:04 ubuntu systemd-logind[652]: New session c2 of user max.
+Oct 18 18:38:04 ubuntu systemd: pam_unix(systemd-user:session): session opened for user max by (uid=0)
+Oct 18 18:38:04 ubuntu systemd-logind[652]: Removed session c1.
+Oct 18 18:38:04 ubuntu lightdm: gkr-pam: gnome-keyring-daemon started properly and unlocked keyring
+Oct 18 18:38:08 ubuntu polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.59 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Oct 18 18:38:12 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Oct 18 18:38:12 ubuntu pkexec[3326]: max: Executing command [USER=root] [TTY=unknown] [CWD=/home/max] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Oct 18 18:38:13 ubuntu dbus-daemon[618]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Oct 18 18:38:14 ubuntu systemd: pam_unix(systemd-user:session): session closed for user lightdm
+Oct 18 18:38:47 ubuntu sudo:      max : TTY=pts/0 ; PWD=/home/max/Desktop ; USER=root ; COMMAND=/usr/bin/apt install ssh
+Oct 18 18:38:47 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct 18 18:38:54 ubuntu useradd[3624]: new user: name=sshd, UID=123, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Oct 18 18:38:54 ubuntu usermod[3632]: change user 'sshd' password
+Oct 18 18:38:54 ubuntu chage[3639]: changed password expiry for sshd
+Oct 18 18:38:54 ubuntu sshd[3755]: Server listening on 0.0.0.0 port 22.
+Oct 18 18:38:54 ubuntu sshd[3755]: Server listening on :: port 22.
+Oct 18 18:38:58 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct 18 18:40:55 ubuntu sudo:      max : TTY=pts/0 ; PWD=/home/max/Desktop ; USER=root ; COMMAND=/usr/sbin/ufw allow 22/tcp
+Oct 18 18:40:55 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct 18 18:40:55 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct 18 18:41:04 ubuntu sudo:      max : TTY=pts/0 ; PWD=/home/max/Desktop ; USER=root ; COMMAND=/usr/sbin/ufw enable
+Oct 18 18:41:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct 18 18:41:05 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct 18 18:41:09 ubuntu pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Oct 18 18:41:09 ubuntu pkexec[4954]: max: Executing command [USER=root] [TTY=unknown] [CWD=/home/max] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Oct 18 18:41:28 ubuntu sshd[4960]: Accepted password for max from 192.168.1.4 port 10986 ssh2
+Oct 18 18:41:28 ubuntu sshd[4960]: pam_unix(sshd:session): session opened for user max by (uid=0)
+Oct 18 18:41:28 ubuntu systemd-logind[652]: New session 3 of user max.
+Oct 18 18:41:36 ubuntu sshd[4960]: pam_unix(sshd:session): session closed for user max
+Oct 18 18:41:36 ubuntu systemd-logind[652]: Session 3 logged out. Waiting for processes to exit.
+Oct 18 18:41:36 ubuntu systemd-logind[652]: Removed session 3.
+Oct 18 18:42:28 ubuntu sshd[5048]: Accepted password for max from 192.168.1.4 port 11059 ssh2
+Oct 18 18:42:28 ubuntu sshd[5048]: pam_unix(sshd:session): session opened for user max by (uid=0)
+Oct 18 18:42:28 ubuntu systemd-logind[652]: New session 4 of user max.
